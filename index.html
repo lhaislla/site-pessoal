@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Profissional de Lhaíslla Cavalcanti</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Estilo para a imagem de perfil */
+        .profile-picture {
+            width: 60px; /* Tamanho desejado */
+            height: 60px; /* Tamanho desejado */
+            border-radius: 50%; /* Para deixar a imagem redonda */
+            margin-right: 10px; /* Espaçamento à direita do texto */
+        }
+
+        /* Estilo para o cabeçalho */
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Responsividade para a imagem de perfil */
+        @media (max-width: 768px) {
+            .profile-picture {
+                width: 40px; /* Reduz o tamanho para telas menores */
+                height: 40px; /* Reduz o tamanho para telas menores */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <img src="https://lh3.googleusercontent.com/a/ACg8ocLQBzHSDSManOT8xsG7Yylm0aqt6F9aw2XyxCPbL8gh0wVRVqxV_A=s288-c-no?text=Imagem+2" alt="Lhaíslla Cavalcanti" class="profile-picture">
+                    <h1>Lhaíslla Cavalcanti</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#noticias">Notícias</a></li>
+                        <li><a href="#formacao-academica">Formação Acadêmica</a></li>
+                        <li><a href="#area-de-pesquisa">Área de Pesquisa</a></li>
+                        <li><a href="#redes-sociais">Redes Sociais</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="noticias" class="carousel">
+        <div class="container">
+            <h2>Notícias</h2>
+            <div class="carousel-container">
+            </div>
+            <div class="carousel-navigation">
+                <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacao-academica" class="section">
+        <div class="container">
+            <h2 class="section-title">Formação Acadêmica</h2>
+            <div class="education-item">
+                <div class="education-text">
+                    <p>Bacharelado em Sistemas de Informação - Universidade Federal Rural de Pernambuco</p>
+                </div>
+                <div class="education-status">
+                    <i class="fas fa-check-circle icon-concluido" title="Concluído"></i>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-text">
+                    <p>Pós-graduação em Informática Aplicada - Universidade Federal Rural de Pernambuco</p>
+                </div>
+                <div class="education-status">
+                    <i class="fas fa-circle-notch icon-andamento" title="Em andamento"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="area-de-pesquisa" class="section">
+        <div class="container">
+            <h2 class="section-title">Área de Pesquisa</h2>
+            <p>Modelagem e Inteligência Computacional, Machine Learning, Análise de Dados</p>
+        </div>
+    </section>
+
+    <section id="redes-sociais" class="section">
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="https://www.instagram.com/lhaisllacavalcanti/?hl=pt-br" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/lhaislla.cavalcanti/?hl=pt-br" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/lha%C3%ADslla-cavalcanti-11ab7714b//?hl=pt-br" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/lhaislla/?hl=pt-br" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>    
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 </p>
+        </div>
+    </footer>
+
+    <script src="js/news-carousel.js"></script> 
+</body>
+</html>

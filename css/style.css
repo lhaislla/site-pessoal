@@ -1,0 +1,268 @@
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    text-align: left;
+    color: #fff;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffd700;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    background-color: #fff;
+}
+
+.carousel h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.carousel-container .slide {
+    display: none;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-container .slide.active {
+    display: block;
+    animation: fade 1s;
+}
+
+.carousel-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.carousel-navigation {
+    margin-top: 20px;
+}
+
+.carousel-prev,
+.carousel-next {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-prev {
+    margin-right: 10px;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    background-color: #555;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links li {
+    margin: 0 15px;
+}
+
+.social-links li a {
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: #007bff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .carousel h2 {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .carousel-container img {
+        max-width: 100%;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links li {
+        margin: 10px 0;
+    }
+
+    .carousel-prev,
+    .carousel-next {
+        padding: 8px 15px;
+        font-size: 20px;
+    }
+
+    /* Estilos para a foto de perfil responsiva */
+    .profile-picture {
+        width: 40px; /* Reduz o tamanho para telas menores */
+        height: 40px; /* Reduz o tamanho para telas menores */
+        border-radius: 50%; /* Para deixar a imagem redonda */
+        margin-right: 10px; /* Espaçamento à direita do texto */
+    }
+}
+
+/* CSS para a classe education-item */
+.education-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.education-item .education-text {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.education-item .education-status {
+    display: flex;
+    align-items: center;
+}
+
+.education-item .education-status .icon-concluido,
+.education-item .education-status .icon-andamento {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+/* Ícones de Status */
+.icon-concluido {
+    color: #28a745; /* Verde */
+}
+
+.icon-andamento {
+    color: #ff8c00; /* Laranja */
+}
